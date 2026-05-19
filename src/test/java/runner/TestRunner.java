@@ -8,7 +8,7 @@ import java.util.Date;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "Features/coursera.feature",
+        features = "./src/test/java/feature",
         glue = {"stepDefinitions", "hooks"},
         plugin = {
                 "pretty","html:reports/myreport.html",
