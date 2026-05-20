@@ -1,29 +1,19 @@
-package Pages;
-
+package pages;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
-    private WebDriver driver;
 
-    private By acceptCookiesBtn = By.id("onetrust-accept-btn-handler");
-    private By signInPopupClose = By.cssSelector(".c-ph-popup-close");
-    private By searchBar = By.cssSelector("input[placeholder='What do you want to learn?']");
+    WebDriver driver;
 
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public void handlePopups() {
-        try {
-            driver.findElement(acceptCookiesBtn).click();
-        } catch (Exception ignored) {}
-        try {
-            driver.findElement(signInPopupClose).click();
-        } catch (Exception ignored) {}
-    }
+    By searchBox = By.name("query");
 
-    public void goToSearch() {
-        driver.findElement(searchBar).click();
+    public void searchCourse(String course) {
+        driver.findElement(searchBox).sendKeys(course + Keys.ENTER);
     }
 }
