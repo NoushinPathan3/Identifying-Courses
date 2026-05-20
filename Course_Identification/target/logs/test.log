@@ -18,3 +18,23 @@
 2026-05-20 17:24:30,738 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
 2026-05-20 17:24:38,623 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
 2026-05-20 17:24:38,623 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 20:34:48,743 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 20:35:01,282 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 20:35:01,301 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 20:35:04,768 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 20:35:18,024 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 20:35:49,182 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 20:35:49,183 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 20:35:52,426 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 20:35:57,460 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 20:35:57,463 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 20:35:59,253 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 20:35:59,257 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 20:36:01,473 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 20:36:01,473 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 20:36:04,054 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 20:36:08,825 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 20:36:08,828 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 20:36:10,539 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 20:36:17,986 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 20:36:17,986 [main] INFO  CourseraLogger - Closing browser...
