@@ -1,7 +1,9 @@
-package pages;
+package Pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import utilities.LoggerUtil;
 
 public class HomePage {
 
@@ -15,5 +17,6 @@ public class HomePage {
 
     public void searchCourse(String course) {
         driver.findElement(searchBox).sendKeys(course + Keys.ENTER);
+        LoggerUtil.info("Searched for course: " + course);
     }
 }

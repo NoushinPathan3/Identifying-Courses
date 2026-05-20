@@ -19,7 +19,6 @@ public class EnterpriseSteps {
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         driver.get("https://www.coursera.org/business");
     }
-
     @When("user enters invalid data")
     public void invalidData() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
