@@ -1,0 +1,16 @@
+# Build and generated files
+target/
+test-output/
+
+# Logs
+logs/
+*.log
+
+# Reports
+reports/
+*.html
+
+
+# OS
+.DS_Store
+Thumbs.db

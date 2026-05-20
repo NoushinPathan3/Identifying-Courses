@@ -1,30 +1,34 @@
 package utilities;
 
-
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
- * Centralized logger utility for Coursera project.
- * Uses Log4j 1.x with property configuration.
+ * Centralized logger utility using Log4j2
+ * Thread-safe for parallel execution
  */
 public class LoggerUtil {
 
-    public static Logger logger = Logger.getLogger("CourseraLogger");
+    private static ThreadLocal<Logger> tlLogger = new ThreadLocal<>();
 
-    static {
-        PropertyConfigurator.configure("src/test/resources/log4j.properties");
+    public static Logger getLogger() {
+        Logger logger = tlLogger.get();
+        if (logger == null) {
+            logger = LogManager.getLogger(Thread.currentThread().getName());
+            tlLogger.set(logger);
+        }
+        return logger;
     }
 
     public static void info(String message) {
-        logger.info(message);
+        getLogger().info(message);
     }
 
     public static void error(String message) {
-        logger.error(message);
+        getLogger().error(message);
     }
 
     public static void warn(String message) {
-        logger.warn(message);
+        getLogger().warn(message);
     }
 }
