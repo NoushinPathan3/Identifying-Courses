@@ -8,10 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="opencart_cucumber_framework" />
         <module name="opencart_cucumber_framework (1)" />
-<<<<<<< HEAD
-=======
+
         <module name="Identify_courses" />
->>>>>>> c8691588116f53ac4882169c060cd33d341cce6b
+
       </profile>
     </annotationProcessing>
   </component>
