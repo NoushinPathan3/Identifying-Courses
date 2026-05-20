@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="opencart_cucumber_framework" />
+        <module name="opencart_cucumber_framework (2)" />
         <module name="opencart_cucumber_framework (1)" />
+        <module name="opencart_cucumber_framework" />
         <module name="Identify_courses" />
       </profile>
     </annotationProcessing>
