@@ -2,6 +2,7 @@ package Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import utilities.LoggerUtil;
 
 public class EnterprisePage {
 
@@ -15,5 +16,6 @@ public class EnterprisePage {
 
     public void clickEnterprise() {
         driver.findElement(enterprise).click();
+        LoggerUtil.info("Clicked on 'For Enterprise' link.");
     }
 }
