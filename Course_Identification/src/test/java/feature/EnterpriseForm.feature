@@ -5,3 +5,4 @@ Feature: Validate Enterprise Form on Coursera
     When user navigates to Enterprise page
     And user enters invalid data
     Then error message should be displayed
+
