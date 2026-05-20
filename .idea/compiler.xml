@@ -8,19 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="opencart_cucumber_framework (2)" />
         <module name="opencart_cucumber_framework (1)" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <module name="opencart_cucumber_framework" />
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 23f054d2b1d5e64a29188e686738bb4f23dd256f
-=======
-
-
->>>>>>> c3f4eca9d370199484d4a72d488bedc7a18c4354
-        <module name="Identify_courses" />
-
       </profile>
     </annotationProcessing>
   </component>
