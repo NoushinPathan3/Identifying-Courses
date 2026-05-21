@@ -1,0 +1,60 @@
+2026-05-20 17:23:06,197 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 17:23:16,741 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 17:23:16,788 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 17:23:20,333 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 17:23:33,621 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 17:24:04,799 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 17:24:04,799 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 17:24:09,187 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 17:24:15,355 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 17:24:15,364 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 17:24:17,551 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 17:24:17,551 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 17:24:19,546 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 17:24:19,546 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 17:24:22,177 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 17:24:27,771 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 17:24:27,779 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 17:24:30,738 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 17:24:38,623 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 17:24:38,623 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 20:34:48,743 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 20:35:01,282 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 20:35:01,301 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 20:35:04,768 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 20:35:18,024 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 20:35:49,182 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 20:35:49,183 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 20:35:52,426 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 20:35:57,460 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 20:35:57,463 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 20:35:59,253 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 20:35:59,257 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 20:36:01,473 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 20:36:01,473 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 20:36:04,054 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 20:36:08,825 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 20:36:08,828 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 20:36:10,539 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 20:36:17,986 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 20:36:17,986 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 21:35:57,114 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 21:36:07,266 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 21:36:07,306 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 21:36:10,964 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 21:36:23,077 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 21:36:54,227 [main] INFO  CourseraLogger - Step passed in scenario: Display error message for invalid data
+2026-05-20 21:36:54,229 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 21:36:58,767 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 21:37:04,076 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 21:37:04,076 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 21:37:06,074 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 21:37:06,080 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 21:37:17,706 [main] INFO  CourseraLogger - Step passed in scenario: Search web development courses
+2026-05-20 21:37:17,708 [main] INFO  CourseraLogger - Closing browser...
+2026-05-20 21:37:21,374 [main] INFO  CourseraLogger - Initializing browser...
+2026-05-20 21:37:26,138 [main] INFO  CourseraLogger - Navigated to: https://www.coursera.org/
+2026-05-20 21:37:26,141 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 21:37:27,859 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 21:37:34,990 [main] INFO  CourseraLogger - Step passed in scenario: Extract language learning
+2026-05-20 21:37:34,991 [main] INFO  CourseraLogger - Closing browser...
