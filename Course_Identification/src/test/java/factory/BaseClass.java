@@ -24,82 +24,94 @@ public class BaseClass {
     private static ThreadLocal<Properties> tlProps = new ThreadLocal<>();
     private static ThreadLocal<Logger> tlLogger = new ThreadLocal<>();
 
-    public static WebDriver initilizeBrowser() throws IOException {
-        Properties p = getProperties();
-        String executionEnv = p.getProperty("execution_env");
-        String browser = p.getProperty("browser").toLowerCase();
-        String os = p.getProperty("os").toLowerCase();
+
+
+    public static WebDriver initializeBrowser() throws IOException {
+
+        Properties prop = getProperties();
+        String executionEnv = prop.getProperty("execution_env");
+        String browser = prop.getProperty("browser").toLowerCase();
+        String os = prop.getProperty("os").toLowerCase();
+
+        WebDriver driver = null;
 
         ChromeOptions options = new ChromeOptions();
         options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         options.addArguments("--disable-notifications");
 
-        WebDriver driverInstance = null;
-
         if (executionEnv.equalsIgnoreCase("remote")) {
+
             DesiredCapabilities capabilities = new DesiredCapabilities();
+
             switch (os) {
                 case "windows" -> capabilities.setPlatform(Platform.WINDOWS);
                 case "mac"     -> capabilities.setPlatform(Platform.MAC);
                 case "linux"   -> capabilities.setPlatform(Platform.LINUX);
-                default -> System.out.println("No matching OS");
+                default        -> throw new RuntimeException("Invalid OS value");
             }
+
             switch (browser) {
-                case "chrome" -> capabilities.setBrowserName("chrome");
-                case "edge"   -> capabilities.setBrowserName("MicrosoftEdge");
-                case "firefox"-> capabilities.setBrowserName("firefox");
-                default -> System.out.println("No matching browser");
+                case "chrome"  -> capabilities.setBrowserName("chrome");
+                case "edge"    -> capabilities.setBrowserName("MicrosoftEdge");
+                case "firefox" -> capabilities.setBrowserName("firefox");
+                default        -> throw new RuntimeException("Invalid browser value");
             }
+
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-            driverInstance = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
-        } else if (executionEnv.equalsIgnoreCase("local")) {
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+
+        } else {
+
             switch (browser) {
-                case "chrome" -> driverInstance = new ChromeDriver(options);
-                case "edge"   -> driverInstance = new EdgeDriver();
-                case "firefox"-> driverInstance = new FirefoxDriver();
-                default -> System.out.println("No matching browser");
+                case "chrome"  -> driver = new ChromeDriver(options);
+                case "edge"    -> driver = new EdgeDriver();
+                case "firefox" -> driver = new FirefoxDriver();
+                default        -> throw new RuntimeException("Invalid browser value");
             }
         }
 
-        if (driverInstance != null) {
-            driverInstance.manage().deleteAllCookies();
-            driverInstance.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-            driverInstance.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-            driverInstance.manage().window().maximize();
-            tlDriver.set(driverInstance);
-        }
+        driver.manage().deleteAllCookies();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().window().maximize();
 
-        return driverInstance;
+        tlDriver.set(driver);
+        return getDriver();
     }
+
+
 
     public static WebDriver getDriver() {
         return tlDriver.get();
     }
 
     public static void quitDriver() {
-        WebDriver d = tlDriver.get();
-        if (d != null) {
-            d.quit();
+        WebDriver driver = tlDriver.get();
+        if (driver != null) {
+            driver.quit();
             tlDriver.remove();
         }
     }
 
+
     public static Properties getProperties() throws IOException {
-        Properties p = tlProps.get();
-        if (p == null) {
-            FileReader file = new FileReader(System.getProperty("user.dir")
-                    + "/src/test/resources/config.properties");
-            p = new Properties();
-            p.load(file);
-            tlProps.set(p);
+        Properties prop = tlProps.get();
+        if (prop == null) {
+            prop = new Properties();
+            FileReader file = new FileReader(
+                    System.getProperty("user.dir") + "/src/test/resources/config.properties");
+            prop.load(file);
+            tlProps.set(prop);
         }
-        return p;
+        return prop;
     }
+
+
 
     public static Logger getLogger() {
         Logger log = tlLogger.get();
         if (log == null) {
-            log = LogManager.getLogger();
+            log = LogManager.getLogger(Thread.currentThread().getName());
             tlLogger.set(log);
         }
         return log;
