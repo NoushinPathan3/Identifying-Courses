@@ -22,7 +22,7 @@ public class Hooks {
     @Before
     public void setup() throws IOException {
         LoggerUtil.info("Initializing browser...");
-        driver = BaseClass.initilizeBrowser();
+        driver = BaseClass.initializeBrowser();
 
         p = BaseClass.getProperties();
         driver.get(p.getProperty("appURL"));

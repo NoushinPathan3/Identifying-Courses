@@ -30,13 +30,13 @@ public class LanguageSteps {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        // ✅ Scroll multiple times for lazy load
+
         for (int i = 0; i < 3; i++) {
             js.executeScript("window.scrollBy(0,1500)");
             try { Thread.sleep(2000); } catch (InterruptedException e) {}
         }
 
-        // ✅ Better locator for course cards
+
         List<WebElement> cards = driver.findElements(By.xpath("//h3"));
 
         Set<String> languages = new HashSet<>();
@@ -57,14 +57,14 @@ public class LanguageSteps {
             if (text.contains("advanced")) levels.add("Advanced");
         }
 
-        // ✅ Print output
+
         System.out.println("Languages Count: " + languages.size());
         System.out.println(languages);
 
         System.out.println("Levels Count: " + levels.size());
         System.out.println(levels);
 
-        // ✅ IMPORTANT: Assertion added
+
         Assert.assertTrue("Languages not found!", languages.size() > 0);
         Assert.assertTrue("Levels not found!", levels.size() > 0);
     }

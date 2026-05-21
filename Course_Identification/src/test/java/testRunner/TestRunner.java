@@ -1,6 +1,9 @@
 package testRunner;
 import org.junit.runner.RunWith;
 import io.cucumber.junit.*;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+import org.testng.annotations.DataProvider;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,25 +22,12 @@ import java.util.Date;
 
 
 )
-public class TestRunner {
+public class TestRunner extends AbstractTestNGCucumberTests {
 
-//    static {
-//        String timestamp =
-//                new SimpleDateFormat("dd-MM-yy HH-mm-ss").format(new Date());
-//
-//        String baseDir = "test-output/SparkReport " + timestamp;
-//
-//        new File(baseDir + "/Report").mkdirs();
-//        new File(baseDir + "/Screenshots").mkdirs();
-//
-//        System.setProperty(
-//                "extent.reporter.spark.out",
-//                baseDir + "/Report/CucumberExtentReport.html"
-//        );
-//
-//        System.setProperty(
-//                "screenshots.dir",
-//                baseDir + "/Screenshot/"
-//        );
-//    }
+    // This method enables parallel execution of scenarios
+    @Override
+    @DataProvider(parallel = true)
+    public Object[][] scenarios() {
+        return super.scenarios();
+    }
 }

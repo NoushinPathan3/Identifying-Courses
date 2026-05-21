@@ -31,3 +31,39 @@
 08:04:47.286 [main] INFO  - Goto my account-->Click on Login.. 
 08:04:47.822 [main] INFO  - Entering email and password.. 
 08:04:48.799 [main] INFO  - clicked on login button...
+22:06:06.331 [TestNG-PoolService-3] INFO  - Initializing browser...
+22:06:18.125 [TestNG-PoolService-1] INFO  - Navigated to: https://www.coursera.org/
+22:06:18.166 [TestNG-PoolService-1] INFO  - Step passed in scenario: Display error message for invalid data
+22:06:18.647 [TestNG-PoolService-2] INFO  - Navigated to: https://www.coursera.org/
+22:06:18.653 [TestNG-PoolService-2] INFO  - Step passed in scenario: Search web development courses
+22:06:18.884 [TestNG-PoolService-3] INFO  - Navigated to: https://www.coursera.org/
+22:06:18.887 [TestNG-PoolService-3] INFO  - Step passed in scenario: Extract language learning
+22:06:22.094 [TestNG-PoolService-2] INFO  - Step passed in scenario: Search web development courses
+22:06:22.098 [TestNG-PoolService-2] INFO  - Step passed in scenario: Search web development courses
+22:06:22.998 [TestNG-PoolService-3] INFO  - Step passed in scenario: Extract language learning
+22:06:24.144 [TestNG-PoolService-1] INFO  - Step passed in scenario: Display error message for invalid data
+22:06:26.608 [TestNG-PoolService-2] INFO  - Step passed in scenario: Search web development courses
+22:06:26.618 [TestNG-PoolService-2] INFO  - Closing browser...
+22:06:30.024 [TestNG-PoolService-3] INFO  - Step passed in scenario: Extract language learning
+22:06:30.024 [TestNG-PoolService-3] INFO  - Closing browser...
+22:06:41.056 [TestNG-PoolService-1] INFO  - Step passed in scenario: Display error message for invalid data
+22:07:12.182 [TestNG-PoolService-1] INFO  - Step passed in scenario: Display error message for invalid data
+22:07:12.182 [TestNG-PoolService-1] INFO  - Closing browser...
+22:09:17.037 [TestNG-PoolService-1] INFO  - Initializing browser...
+22:09:27.019 [TestNG-PoolService-3] INFO  - Navigated to: https://www.coursera.org/
+22:09:27.035 [TestNG-PoolService-2] INFO  - Navigated to: https://www.coursera.org/
+22:09:27.035 [TestNG-PoolService-1] INFO  - Navigated to: https://www.coursera.org/
+22:09:27.074 [TestNG-PoolService-1] INFO  - Step passed in scenario: Display error message for invalid data
+22:09:27.074 [TestNG-PoolService-2] INFO  - Step passed in scenario: Search web development courses
+22:09:27.074 [TestNG-PoolService-3] INFO  - Step passed in scenario: Extract language learning
+22:09:29.893 [TestNG-PoolService-2] INFO  - Step passed in scenario: Search web development courses
+22:09:29.906 [TestNG-PoolService-2] INFO  - Step passed in scenario: Search web development courses
+22:09:29.984 [TestNG-PoolService-3] INFO  - Step passed in scenario: Extract language learning
+22:09:31.294 [TestNG-PoolService-1] INFO  - Step passed in scenario: Display error message for invalid data
+22:09:38.300 [TestNG-PoolService-3] INFO  - Step passed in scenario: Extract language learning
+22:09:38.300 [TestNG-PoolService-3] INFO  - Closing browser...
+22:09:43.147 [TestNG-PoolService-2] INFO  - Step passed in scenario: Search web development courses
+22:09:43.149 [TestNG-PoolService-2] INFO  - Closing browser...
+22:10:17.763 [TestNG-PoolService-1] INFO  - Step passed in scenario: Display error message for invalid data
+22:10:48.932 [TestNG-PoolService-1] INFO  - Step passed in scenario: Display error message for invalid data
+22:10:48.932 [TestNG-PoolService-1] INFO  - Closing browser...
