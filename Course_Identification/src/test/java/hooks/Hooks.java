@@ -1,6 +1,11 @@
 package hooks;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 import org.openqa.selenium.OutputType;
@@ -37,16 +42,35 @@ public class Hooks {
         driver.quit();
     }
 
+
     @AfterStep
     public void addScreenshot(Scenario scenario) {
-        if (scenario.isFailed()) {
-            LoggerUtil.error("Scenario failed: " + scenario.getName());
+
+        try {
             TakesScreenshot ts = (TakesScreenshot) driver;
             byte[] screenshot = ts.getScreenshotAs(OutputType.BYTES);
-            scenario.attach(screenshot, "image/png", scenario.getName());
-            LoggerUtil.info("Screenshot attached for failed scenario.");
-        } else {
-            LoggerUtil.info("Step passed in scenario: " + scenario.getName());
+
+
+            String screenshotDir = System.getProperty("user.dir") + "/reports/screenshots/";
+            Files.createDirectories(Paths.get(screenshotDir));
+
+
+            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmssSSS").format(new Date());
+            String fileName = scenario.getName().replaceAll(" ", "_") + "_" + timestamp + ".png";
+
+            File file = new File(screenshotDir + fileName);
+            Files.write(file.toPath(), screenshot);
+
+            scenario.attach(screenshot, "image/png", fileName);
+
+            LoggerUtil.info("Screenshot saved: " + file.getAbsolutePath());
+
+            if (scenario.isFailed()) {
+                LoggerUtil.error("Scenario failed: " + scenario.getName());
+            }
+
+        } catch (IOException e) {
+            LoggerUtil.error("Error while saving screenshot: " + e.getMessage());
         }
     }
 }
